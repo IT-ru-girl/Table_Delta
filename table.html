@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="table-container">
+    <table>
+        <tr class="table_title">
+            <th class="table_item">Показатель</th>
+            <th class="table_item today">Текущий день</th>
+            <th class="table_item">Вчера</th>
+            <th class="table_item">Этот день недели</th>
+        </tr>
+        <tr id="revenue" onclick="showGraph()" class="unclicked">
+            <td class="indicator">Выручка, руб</td>
+            <td class="indicator-value today">500521</td>
+            <td class="indicator-value yes">480521 <span class="percent_positive">4%</span></td>
+            <td class="indicator-value red_text">4805121</td>
+        </tr>
+        <tr id="cash" onclick="showGraph()" class="unclicked">
+            <td class="indicator">Наличные</td>
+            <td class="indicator-value today">300000</td>
+            <td class="indicator-value">300000 <span class="percent_neutral">0%</span></td>
+            <td class="indicator-value">300000</td>
+        </tr>
+        <tr id="cashless-payments" onclick="showGraph()" class="unclicked">
+            <td class="indicator">Безналичный рассчет</td>
+            <td class="indicator-value today">100000</td>
+            <td class="indicator-value">100000 <span class="percent_neutral">0%</span></td>
+            <td class="indicator-value">100000</td>
+        </tr>
+        <tr id="credit-cards" onclick="showGraph()" class="unclicked">
+            <td class="indicator">Кредитные карты</td>
+            <td class="indicator-value today">100521</td>
+            <td class="indicator-value">100521 <span class="percent_neutral">0%</span></td>
+            <td class="indicator-value">100521</td>
+        </tr>
+        <tr id="average-check" onclick="showGraph()" class="unclicked ">
+            <td class="indicator">Средний чек, руб</td>
+            <td class="indicator-value today">1300</td>
+            <td class="indicator-value ">900 <span class="percent_positive">44%</span></td>
+            <td class="indicator-value green_text ">900</td>
+        </tr>
+        <tr id="average-guest" onclick="showGraph()" class="unclicked">
+            <td class="indicator">Средний гость, руб</td>
+            <td class="indicator-value today">1200</td>
+            <td class="indicator-value">800 <span class="percent_positive">50%</span></td>
+            <td class="indicator-value green_text ">800</td>
+        </tr>
+        <tr id="deletions-from-the-check-after-payment" onclick="showGraph()" class="unclicked">
+            <td class="indicator">Удаления из чека (после оплаты), руб</td>
+            <td class="indicator-value today">1000</td>
+            <td class="indicator-value">1100 <span class="percent_negative">-9%</span></td>
+            <td class="indicator-value green_text ">900</td>
+        </tr>
+        <tr id="deletions-from-the-check-before-payment" onclick="showGraph()" class="unclicked">
+            <td class="indicator">Удаления из чека (до оплаты), руб</td>
+            <td class="indicator-value today">1300</td>
+            <td class="indicator-value">1300 <span class="percent_neutral">0%</span></td>
+            <td class="indicator-value green_text ">900</td>
+        </tr>
+        <tr id="number-of-checks" onclick="showGraph()" class="unclicked">
+            <td class="indicator">Количество чеков</td>
+            <td class="indicator-value today">34</td>
+            <td class="indicator-value">36 <span class="percent_negative">-6%</span></td>
+            <td class="indicator-value">34</td>
+        </tr>
+        <tr id="number-of-guests" onclick="showGraph()" class="unclicked">
+            <td class="indicator">Количество гостей</td>
+            <td class="indicator-value today">34</td>
+            <td class="indicator-value">36 <span class="percent_negative">-6%</span></td>
+            <td class="indicator-value green_text">32</td>
+        </tr>
+    </table>
+</div>
+<script src="./js/table.js"></script>
+</body>
+</html>

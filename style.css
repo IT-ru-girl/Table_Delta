@@ -1,0 +1,44 @@
+
+table {
+    margin: 0 auto;
+    width: 1000px;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: right;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.green_text {
+    background-color: lightgreen;
+}
+
+.today {
+    background-color: lightblue;
+}
+
+.red_text {
+    background-color: lightpink;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+td:nth-child(3) {
+    display: flex;
+    justify-content: space-between;}
+
+
